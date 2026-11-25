@@ -41,4 +41,44 @@ public Project(String projectName, String description,
     this.status = status;
 }
 
+public Long getProjectId() {
+   return projectId;
+}
+
+public String getProjectName() {
+   return projectName;
+}
+
+public void setProjectName(String projectName) {
+   this.projectName = projectName;
+}
+
+public String getDescription() {
+   return description;
+}
+
+public void setDescription(String description) {
+   this.description = description;
+}
+
+public BigDecimal getAllocatedBudget() {
+   return allocatedBudget;
+}
+
+public void setAllocatedBudget(BigDecimal allocatedBudget) {
+   this.allocatedBudget = allocatedBudget;
+}
+
+public String getStatus() {
+   return status;
+}
+
+public void setStatus(String status) {
+   this.status = status;
+}
+
+public LocalDateTime getCreatedAt() {
+   return createdAt;
+}
+
 }
