@@ -15,4 +15,9 @@ public interface ExpenseRepository extends JpaRepository<Expense, Long> {
     @Query("SELECT COALESCE(SUM(e.amount), 0) FROM Expense e " +
            "WHERE e.project.projectId = :projectId")
     BigDecimal getTotalExpensesByProjectId(@Param("projectId") Long projectId);
+
+
+    @Query("SELECT COALESCE(SUM(e.amount), 0) FROM Expense e")
+    BigDecimal getTotalExpenses();
+
 }
